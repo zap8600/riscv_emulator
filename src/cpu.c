@@ -745,6 +745,6 @@ void dump_registers(CPU *cpu) {
 
 void dump_json(CPU* cpu) {
     const char* pc_tmp;
-    stbsp_snprintf((char *)pc_tmp, "%lx", cpu->pc);
+    stbsp_snprintf((char *)pc_tmp, "%x", cpu->pc);
     printf("%s", pc_tmp);
 }

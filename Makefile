@@ -28,6 +28,7 @@ LIB_SRC_FILES = $(shell find $(MAIN_DIR)/src/ -name '*.c')
 
 SRC_FILES += $(APP_SRC_FILES)
 SRC_FILES += $(LIB_SRC_FILES)
+SRC_FILES += "./lib/cJSON/cJSON.c"
 
 # Essentially, the same as gcc main.c file1.c file 2.c -o main file1.h file2.h
 MAKE_CMD = $(CC) $(SRC_FILES) -o $(APP_NAME) $(INCLUDE_DIRS)

@@ -6,6 +6,8 @@
 #include "../includes/csr.h"
 #include "../lib/stb/stb_sprintf.h"
 
+#define STB_SPRINTF_IMPLEMENTATION
+
 #define ANSI_YELLOW  "\x1b[33m"
 #define ANSI_BLUE    "\x1b[31m"
 #define ANSI_RESET   "\x1b[0m"

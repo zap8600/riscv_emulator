@@ -3,12 +3,14 @@
 
 #include <stdint.h>
 #include "bus.h"
+#include "../lib/cJSON/cJSON.h"
 
 typedef struct CPU {
     uint64_t regs[32];          // 32 64-bit registers (x0-x31)
     uint64_t pc;                // 64-bit program counter
     uint64_t csr[4069];
     struct BUS bus;             // CPU connected to BUS
+    cJSON *state;
 } CPU;
 
 void cpu_init(struct CPU *cpu);

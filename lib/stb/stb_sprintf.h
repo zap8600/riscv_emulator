@@ -226,7 +226,7 @@ STBSP__PUBLICDEC void STB_SPRINTF_DECORATE(set_separators)(char comma, char peri
 #else
 #define stbsp__uint64 unsigned long long
 #define stbsp__int64 signed long long
-#endi-f
+#endif
 #define stbsp__uint16 unsigned short
 
 #ifndef stbsp__uintptr

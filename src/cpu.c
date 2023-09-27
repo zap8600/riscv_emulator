@@ -4,6 +4,7 @@
 #include "../includes/cpu.h"
 #include "../includes/opcodes.h"
 #include "../includes/csr.h"
+#include "../lib/stb/stb_sprintf.h"
 
 #define ANSI_YELLOW  "\x1b[33m"
 #define ANSI_BLUE    "\x1b[31m"
@@ -742,3 +743,8 @@ void dump_registers(CPU *cpu) {
     }
 }
 
+void dump_json(CPU* cpu) {
+    const char* pc_tmp;
+    stbsp_snprintf(pc_tmp, "%llu", cpu->pc);
+    printf("%s", pc_tmp);
+}

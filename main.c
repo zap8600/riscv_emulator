@@ -85,5 +85,6 @@ int main(int argc, char* argv[]) {
             break;
     }
     /*dump_registers(&cpu);*/
+    dump_json(&cpu);
     return 0;
 }

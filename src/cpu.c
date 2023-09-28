@@ -4,9 +4,9 @@
 #include "../includes/cpu.h"
 #include "../includes/opcodes.h"
 #include "../includes/csr.h"
-#include "../lib/stb/stb_sprintf.h"
 
 #define STB_SPRINTF_IMPLEMENTATION
+#include "../lib/stb/stb_sprintf.h"
 
 #define ANSI_YELLOW  "\x1b[33m"
 #define ANSI_BLUE    "\x1b[31m"
